@@ -11,7 +11,6 @@ public class LabSeqService {
     // Cache interno para armazenar os resultados calculados
     private final Map<Integer, Long> cache = new HashMap<>();
 
-    // Método que realiza o cálculo da sequência
     public long calculateLabSeq(int n) {
         // Verifica se o valor já foi calculado e está no cache
         if (cache.containsKey(n)) {

@@ -12,7 +12,6 @@ public class LabSeqController {
 
     private final LabSeqService labSeqService;
 
-    // Injeção de dependência do serviço
     public LabSeqController(LabSeqService labSeqService) {
         this.labSeqService = labSeqService;
     }
@@ -23,6 +22,6 @@ public class LabSeqController {
         if (n < 0) {
             throw new IllegalArgumentException("Index must be a non-negative integer.");
         }
-        return labSeqService.calculateLabSeq(n);  // Delegação da lógica para o Service
+        return labSeqService.calculateLabSeq(n); 
     }
 }
