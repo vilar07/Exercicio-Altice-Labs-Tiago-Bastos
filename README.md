@@ -3,8 +3,9 @@
 ## Getting Started 🚀
 1. Clone this repository.
 2. Open two terminals, one in Exercicio-Altice-Labs-Tiago-Bastos/labseq_backend, other in Exercicio-Altice-Labs-Tiago-Bastos/labseq_frontend
-4. In the first terminal, run mvn spring-boot:run. In the second one, run npm install and then npm run dev.
+3. In the first terminal, run mvn spring-boot:run. In the second one, run npm install and then npm run dev.
 Access the frontend application at [http://localhost:3000](http://localhost:3000) and the backend REST API documentation – Open API format (Swagger) at [http://localhost:8080/swagger-ui/index.html#/lab-seq-controller/getLabSeq](http://localhost:8080/swagger-ui/index.html#/lab-seq-controller/getLabSeq)
+4. The service can be tested in Swagger or in the homepage of the frontend application.
 
 ##What was implemented:
 * Implemented the frontend with Nextjs, Typescript and Tailwind CSS to invoke the service ✅
