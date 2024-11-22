@@ -4,6 +4,10 @@ import "./globals.css";
 import Navbar from "../../components/navbar";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import {Footer} from "../../components/Footer";
+import 'primereact/resources/themes/lara-light-blue/theme.css';
+import 'primeicons/primeicons.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,15 +30,20 @@ export default async function RootLayout({
   const messages = await getMessages({ locale });
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
-          <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
-            <Navbar />
-            <div className="flex-grow mt-20">{children}</div>
-            footer
-          </div>
-        </NextIntlClientProvider>
-      </body>
+        <head>
+          <link rel="icon" href="/favicon.ico" />
+        </head>
+        <PrimeReactProvider>
+            <body className="bg-light">
+                <NextIntlClientProvider messages={messages}>
+                    <header>
+                        <Navbar/>
+                    </header>
+                    <main className="w-full h-full inline-block z-0 min-h-screen">{children}</main>
+                    <Footer/>
+                </NextIntlClientProvider>
+            </body>
+        </PrimeReactProvider>
     </html>
   );
 }

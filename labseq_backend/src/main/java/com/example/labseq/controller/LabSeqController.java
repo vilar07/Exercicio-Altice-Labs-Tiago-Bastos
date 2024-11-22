@@ -18,10 +18,10 @@ public class LabSeqController {
 
     // Endpoint que retorna o valor da sequência para o índice n
     @GetMapping("/{n}")
-    public long getLabSeq(@PathVariable int n) {
+    public String getLabSeq(@PathVariable int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Index must be a non-negative integer.");
         }
-        return labSeqService.calculateLabSeq(n); 
+        return labSeqService.calculateLabSeq(n).toString(); 
     }
 }

@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
+    "framer-motion": "^11.11.17",
+    "icons": "^1.0.0",
     "next": "^14.2.18",
     "next-intl": "^3.17.2",
     "postcss-import": "^16.1.0",
+    "prime": "^0.3.2",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.8.4",
     "react": "^18",
     "react-dom": "^18"
   },

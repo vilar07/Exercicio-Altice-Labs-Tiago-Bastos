@@ -1,8 +1,22 @@
 {
     "Index": {
-        "title": "Bem vindo à página inicial"
+        "title": "Exercício - Altice Labs",
+        "developed": "Desenvolvido por Tiago Bastos",
+        "insert": "Insere um número não negativo",
+        "question": "Queres calcular um valor da sequência labseq?",
+        "questionCalculator": "Resultado (se for infinity é porque o javascript para números muito grandes mostra Infinity):"
     },
     "Navigation": {
-        "home": "Pagina Inicial"
+        "home": "Pagina Inicial",
+        "about": "Sobre Nós",
+        "services": "Serviços",
+        "contact": "Contactos"
+    },
+    "Footer": {
+        "name": "Altice Labs Labseq Exercicio",
+        "about": "Sobre Nós",
+        "privacyPolicy": "Política de Privacidade",
+        "License": "Licença",
+        "Contact": "Contactos"
     }
 }

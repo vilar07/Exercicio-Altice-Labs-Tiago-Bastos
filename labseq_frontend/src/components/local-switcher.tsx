@@ -17,14 +17,20 @@ export default function LocalSwitcher() {
   };
 
   return (
-    <label className="border-2 rounded">
-      <p className="sr-only">change language</p>
-      <select defaultValue={locale} 
-              className="bg-transparent py-2" 
-              onChange={onSelectChange}
-              disabled={isPending}>
-        <option value="en">En</option>
-        <option value="pt">Pt</option>
+    <label className="border-2 border-gray-200 rounded-xl text-black z-30">
+      <p className="sr-only">Change Language</p>
+      <select
+        defaultValue={locale}
+        className="bg-transparent py-2 px-2 text-black flex items-center"
+        onChange={onSelectChange}
+        disabled={isPending}
+      >
+        <option value="en" className="text-black flex items-center justify-center">
+          🇬🇧 En
+        </option>
+        <option value="pt" className="text-black flex items-center justify-center">
+          🇵🇹 Pt
+        </option>
       </select>
     </label>
   );
