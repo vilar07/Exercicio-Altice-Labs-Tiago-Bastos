@@ -16,5 +16,4 @@ Access the frontend application at [http://localhost:3000](http://localhost:3000
 * Added input verification, both in frontend and backend ✅
 * Added a simple Homepage ✅
 * Used PrimeReact components and Icons ✅
-* Added github actions (.github/workflows/integration.yaml) so every push to the repository is making a test with build to see if its all good ✅
 
